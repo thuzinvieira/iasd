@@ -1,0 +1,175 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    outline: none;
+    font-family:arial;
+}
+
+body{
+background-image: url(./img/tela\ 2.jpg);
+background-position: center;
+
+}
+
+section,footer{
+    padding: 54px 0;
+    
+}
+h3{
+    font-size: 50px;
+}
+
+p{
+    color: black;
+}
+
+.contaner{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+background-color: rgb(68, 0, 255);
+color: white;
+padding: 15px 20px;
+border-radius: 10px;
+cursor: pointer;
+display: inline-block;
+transition: 0.1s;
+}
+
+.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes animate-outline {
+  from{
+    outline: 0px solid red;
+  }
+  to{
+    outline: 15px solid red;
+  }
+
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: rgb(19, 3, 243);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
+
+.banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner-text h1{
+    font-size: 40px;
+    color: white;
+}
+
+.banner-text p{
+    color: rgb(252, 252, 252);
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+
+footer img{
+    width: 200px;
+    height: 200px;
+    border-radius: 12%;
+ }
+
+ footer{
+    display:flex;
+    justify-content: center;
+    height: 300px;
+ }
+ 
+ footer a{
+    margin: 25px;
+ }
+ 
+ footer p{
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 15px;
+    margin: 12px;
+    color:black;
+ }
+   
+@media screen and (max-width:768px) {
+    section,aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.iasd-bj{
+    display: flex;
+    align-items: center;
+}
+
+.iasd-bj img{
+    width: 50%;
+    height: 50%;
+}
+
+.iasd-bj h3{
+    text-align: center;
+    height: 500px;
+    width: 930px;
+    color: white;
+}
+
+.iasd-bj p{
+    width: 0%;
+    height: 0%;
+}
